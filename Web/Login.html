@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="userApp" >
+
+<head >
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="../AngularJS/ControladorLogin.js"></script>
+</head>
+
+<body>
+    <div ng-controller="userController">
+        <table id="searchResults">
+            <tr>
+                <th>Name</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr ng-repeat="data in usersData">
+                <td>{{data.UserId}}</td>
+                <td>{{data.UserName}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div ng-controller="userControllerNw">
+        <table id="searchResults">
+            <tr>
+                <th>Name2</th>
+                <th>Ciudad2</th>
+            </tr>
+            <tr ng-repeat="dataNw in usersDataNw">
+                <td>{{dataNw.Name}}</td>
+                <td>{{dataNw.City}}</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
