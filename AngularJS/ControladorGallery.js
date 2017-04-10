@@ -5,6 +5,7 @@ app.controller('GaleriaAppLista', function($scope, $http) {
             //console.log(response);
             //console.log(response.Arreglo);
             $scope.usersData = response.ImagenDeFotos;
+            //$scope.data.image_url=response.PictureFlowers;
             console.log($scope);
             //console.log('SQL');
         });

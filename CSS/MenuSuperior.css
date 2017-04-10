@@ -11,19 +11,21 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Muli Bold', sans-serif;
     color: black;
 }
 
 .navbar-Principal a:hover {
     background-color: #d9d9d9;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Muli Bold', sans-serif;
     color: black;
+
 }
 .navbar-Principal a.activado {
-    background-color: #4CAF50;
+    background-color: #95a105;
     color: white;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Muli Bold', sans-serif;
+
 
 }
 
@@ -44,5 +46,5 @@
 }
 
 @media screen and  (min-width: 769px) {
-  
+
 }
