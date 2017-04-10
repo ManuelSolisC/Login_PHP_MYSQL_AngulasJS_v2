@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="userApp" >
+<html lang="en" ng-app="GaleriaApp" class="ContenedorPrincipal">
 
-<head >
+<head>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="../AngularJS/ControladorLogin.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="../CSS/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
 </head>
 
+
 <body>
-    <div ng-controller="userController">
-        <table id="searchResults">
-            <tr>
-                <th>Name</th>
-                <th>Ciudad</th>
-            </tr>
-            <tr ng-repeat="data in usersData">
-                <td>{{data.UserId}}</td>
-                <td>{{data.UserName}}</td>
-            </tr>
-        </table>
+    <div>
+        <div class="LoginBox">
+            <div class="TituloLogin">
+                <div class="TextoTitulo">
+                    <b>WorkShop</b>
+                </div>
+            </div>
+            <div class="Campo">
+                <br>
+                <div class="Texto">
+                    <b>  Usuario</b>
+                </div>
 
-    </div>
+                <input type="text" name="User" class="Atributo" placeholder="ingrese Usuario">
+            </div>
+            <div class="Campo">
+                <br>
+                <div class="Texto">
+                    <b>Contraseña</b>
+                </div>
+                <input type="password" name="pass" class="Atributo" placeholder="Ingrese Contraseña">
+            </div>
+            <br>
 
-
-    <div ng-controller="userControllerNw">
-        <table id="searchResults">
-            <tr>
-                <th>Name2</th>
-                <th>Ciudad2</th>
-            </tr>
-            <tr ng-repeat="dataNw in usersDataNw">
-                <td>{{dataNw.Name}}</td>
-                <td>{{dataNw.City}}</td>
-            </tr>
-        </table>
-
+            <div class="Campo" >
+                <button type="submit" name="BtnLogin" class="buttonLogin"  ng-click="validar()"> Ingresar </button>
+            </div>
+            <br>
+        </div>
     </div>
 </body>
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="GaleriaApp" class="ContenedorPrincipal">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="../AngularJS/ControladorGallery.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:600" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/master.css">
+    <link rel="stylesheet" href="../CSS/MenuSuperior.css">
+    <link rel="stylesheet" href="../CSS/GaleriaImagen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+</head>
+
+<header>
+
+</header>
+
+<body>
+    <div class="SystemBox">
+        <div class="Banner">
+
+        </div>
+        <!-- Menu Superior -->
+        <div class="navbar-Principal">
+
+            <a class="activado" href="Dashboard"> Ofertas Especiales </a>
+            <a href="ArreglosFlorales"> Galeria de Fotos </a>
+            <a href="PedidoEspeciales"> Pedidos Especiales</a>
+            <a href="QuienesSomos"> Quienes Somos</a>
+
+        </div>
+
+        <!-- Cerramos menu Superior -->
+
+        <!-- Iniciamos galeria de imagenes en el Dashboard con las principales imagenes -->
+        <div ng-controller="GaleriaAppLista">
+            <div class="GaleriaImages">
+                <div class="GaleriaImagesItem" ng-repeat=" x in usersData">
+                    <div>
+                        <img ng-src="{{x.PictureFlowers}}" alt="{{x.NombreFlower }}">
+
+                        <h3>
+                              {{x.NombreFlower }}
+                            </h3>
+                        <p>
+                            {{x.DescriptionFlowers }}
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

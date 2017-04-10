@@ -1,0 +1,89 @@
+    .SystemBox {
+        /* es la caja donde se encontrara el proyecto */
+        margin: auto;
+        border-collapse: separate;
+        background-color: white;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 5px;
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 15px;
+        width: 70%;
+    }
+
+    .GaleriaImages {
+        /* es la caja Padre del Flex*/
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 30px;
+
+    }
+
+    .GaleriaImagesItem {
+        /* es la caja donde contendremos la informacón de cada producto*/
+        padding: 15px;
+        background-color: red;
+    }
+
+    @media screen and (max-width: 480px) and (min-width: 1px) {
+        .GaleriaImages {
+            padding-top: 15px;
+            padding-left: 2px;
+            padding-right: 2px;
+            flex-direction: column;
+
+            width: 98%;
+        }
+        .SystemBox {
+            padding-left: 2px;
+            padding-right: 2px;
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 481px) {
+        .GaleriaImages {
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 2px;
+            padding-right: 15px;
+            flex-direction: column;
+            width: 90%;
+        }
+        .SystemBox {
+            padding-left: 2px;
+            padding-right: 2px;
+            width: 90%;
+        }
+    }
+
+    @media screen and  (min-width: 769px) {
+      /* Pantalla Normal */
+      .GaleriaImages {
+          padding-top: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+          width: 100%;
+          justify-content:  space-around left;
+          padding-bottom: 30px;
+          flex-flow:   row wrap;
+        }
+
+      .GaleriaImagesItem{
+        background-color: white;
+        border-color: whiteSmoke;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+        width: 27%;
+        height:auto;
+        margin: 10px;
+      }
+
+
+    }
